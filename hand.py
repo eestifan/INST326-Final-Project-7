@@ -97,3 +97,14 @@ class Hand:
         for card in self.cards:
             rank, suit, value = card
             print(f"{rank} of {suit}")
+            
+    def has_blackjack(self):
+        """
+    Purpose: Check if the hand is a blackjack (exactly 21 with 2 cards).
+
+    Returns:
+        bool: True if blackjack, otherwise False
+        
+    Author: William
+    """
+        return len(self.cards) == 2 and self.calculate_value() == 21
