@@ -1,6 +1,6 @@
 <img width="1536" height="1024" alt="26e48543-9403-4a15-96ee-b2625b07d6ef" src="https://github.com/user-attachments/assets/8836915c-c20d-4766-aa26-1a042e14b292" />
 
-# Simple 21: Blackjack
+# Simple 21: Blackjack :spades: :diamonds: :clubs: :hearts:
 
 ## Game Description
 
