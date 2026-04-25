@@ -8,7 +8,7 @@ def check_bust(hand):
     Returns:
         bool: True if the hand is bust, False otherwise
 
-    Author: Devante Thompson
+    Author: Devante 
     """
 
     # Step 1: Get the value of the hand
