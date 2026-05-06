@@ -9,13 +9,16 @@ This project is a simple Blackjack game written in Python. The goal is to get a 
 ## File Descriptions
 
 ### hand.py  
-This file contains the Hand class. It handles storing the cards, adding new cards, calculating the total value of a hand, checking if the hand is bust, and displaying the cards.
+This file contains the `Hand` class. It handles storing the cards, adding new cards, calculating the total value of a hand, checking if the hand is bust, and displaying the cards.
 
 ### main.py  
-This file is used to test the Hand class. It creates a hand, adds some cards, and prints out the results so we can see that everything is working.
+This file is used to test the `Hand` class. It creates a hand, adds some cards, and prints out the results so we can see that everything is working.
 
 ### check_bust.py  
-This file contains a function that checks if a hand has gone over 21 by using the calculate_value method from the Hand class.
+This file contains a function that checks if a hand has gone over 21 by using the calculate_value method from the `Hand` class.
+
+### deck.py
+Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
 
 ## Annotated Bibliography
 
