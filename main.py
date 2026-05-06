@@ -18,8 +18,9 @@ def main():
     player_hand = Hand()
     dealer_hand = Hand()
 
-    player_hand.add_card(("Ace", "Spades", 11))
-    player_hand.add_card(("King", "Hearts", 10))
+    # Dealt from the deck instead of hard-coded
+    player_hand.add_card(deck.deal_card())
+    player_hand.add_card(deck.deal_card())
     
     dealer_hand.add_card(deck.deal_card())
     dealer_hand.add_card(deck.deal_card())
@@ -66,7 +67,7 @@ def main():
         elif dealer_score > player_score:
             print("Dealer wins.")
         else:
-            print("It's a push (tie)!")
+            print("It's a push.")
 
     print("\nGame Over. Thanks for playing!")
 
