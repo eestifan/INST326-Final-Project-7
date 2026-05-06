@@ -17,6 +17,9 @@ This file is used to test the Hand class. It creates a hand, adds some cards, an
 ### check_bust.py  
 This file contains a function that checks if a hand has gone over 21 by using the calculate_value method from the Hand class.
 
+### deck.py
+Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
+
 ## Annotated Bibliography
 
 ### Bicycle Cards – How to Play Blackjack (https://bicyclecards.com/how-to-play/blackjack/)  
