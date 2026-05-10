@@ -23,6 +23,17 @@ Contains the `Deck` class used to create, shuffle, and deal cards for the Blackj
 ## Attribution Table
 | Method/Function | Primary Author | Technique Claimed |
 |---|---|---|
+| `main()` | Kerwin/William | 3. F-strings containing expressions |
+| `Hand.__init__()` | Kerwin | N/A |
+| `Hand.add_card()` | Kerwin | N/A |
+| `Hand.calculate_value()` | Kerwin | 6. Sequence unpacking |
+| `Hand.is_bust()` | Kerwin | N/A |
+| `Hand.display_hand()` | Kerwin | N/A |
+| `Hand.has_blackjack()` | William | N/A |
+| `Deck.__init__()` | William | N/A |
+| `Deck.shuffle()` | William | N/A |
+| `Deck.deal_card()` | William | N/A |
+| `check_bust()` | Devante | N/A |
 
 ## Annotated Bibliography
 
