@@ -34,7 +34,7 @@ Contains the `Deck` class used to create, shuffle, and deal cards for the Blackj
 | `Deck.__init__()` | William | N/A |
 | `Deck.shuffle()` | William | N/A |
 | `Deck.deal_card()` | William | N/A |
-| `check_bust()` | Devante | 1. Conditional expressions |
+| `check_bust()` | Devante | 1. Conditional expressions, 2. Optional parameters and/or keyword arguments |
 
 ## Annotated Bibliography
 
