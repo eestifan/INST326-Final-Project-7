@@ -31,6 +31,12 @@ Run the program using:
 python main.py
 ```
 
+If needed, use:
+
+```bash
+python3 main.py
+```
+
 ---
 
 ## How to Use the Program
