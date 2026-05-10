@@ -20,6 +20,38 @@ This file contains a function that checks if a hand has gone over 21 by using th
 ### deck.py
 Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
 
+---
+## How to Run the Program
+
+Open a terminal or command prompt and navigate to the project folder.
+
+Run the program using:
+
+```bash
+python main.py
+```
+
+---
+
+## How to Use the Program
+
+When the game starts, the player and dealer are each dealt two cards.
+
+The player can then choose:
+
+- `H` to hit (draw another card)
+- `S` to stand (keep the current hand)
+
+The goal is to get as close to 21 as possible without going over.
+
+Important terms:
+
+- **Bust**: Going over 21
+- **Blackjack**: Getting exactly 21 with the first two cards
+- **Push**: A tie between the player and dealer
+
+After the player finishes their turn, the dealer automatically draws cards until reaching at least 17
+
 ## Attribution Table
 
 | Method/Function | Primary Author | Technique Claimed |
