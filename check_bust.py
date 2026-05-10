@@ -14,8 +14,5 @@ def check_bust(hand):
     # Step 1: Get the value of the hand
     total = hand.calculate_value()
 
-    # Step 2: Check if value is greater than 21
-    if total > 21:
-        return True
-    else:
-        return False
+    # Step 2: Return True if over 21, otherwise False
+    return True if total > 21 else False
