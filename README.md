@@ -21,6 +21,8 @@ This file contains a function that checks if a hand has gone over 21 by using th
 Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
 
 ## Attribution Table
+
+| Method/Function | Primary Author | Technique Claimed |
 |---|---|---|
 | `main()` | Kerwin/William | 11. Composition of two custom classes |
 | `Hand.__init__()` | Kerwin | N/A |
