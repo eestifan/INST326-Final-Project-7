@@ -20,6 +20,10 @@ This file contains a function that checks if a hand has gone over 21 by using th
 ### deck.py
 Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
 
+## Attribution Table
+| Method/Function | Primary Author | Technique Claimed |
+|---|---|---|
+
 ## Annotated Bibliography
 
 ### Bicycle Cards – How to Play Blackjack (https://bicyclecards.com/how-to-play/blackjack/)  
