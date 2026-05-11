@@ -62,7 +62,7 @@ After the player finishes their turn, the dealer automatically draws cards until
 
 | Method/Function | Primary Author | Technique Claimed |
 |---|---|---|
-| `main()` | Kerwin/William | 11. Composition of two custom classes |
+| `main()` | William | 11. Composition of two custom classes |
 | `Hand.__init__()` | Kerwin | N/A |
 | `Hand.add_card()` | Kerwin | N/A |
 | `Hand.calculate_value()` | Kerwin | 6. Sequence unpacking |
