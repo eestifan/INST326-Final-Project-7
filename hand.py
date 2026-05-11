@@ -108,3 +108,17 @@ class Hand:
     Author: William
     """
         return len(self.cards) == 2 and self.calculate_value() == 21
+
+    def clear_hand(self):
+        """
+    Purpose: Remove all cards from the hand to reset it for a new round.
+    Args:
+        None
+    Returns:
+        None
+    Author: Efieson Estifanos
+    """
+    # Empty the cards list using the built in clear method
+    self.cards.clear()
+
+    
