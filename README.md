@@ -45,16 +45,16 @@ When the game starts, the player and dealer are each dealt two cards.
 
 The player can then choose:
 
-- `H` to hit (draw another card)
-- `S` to stand (keep the current hand)
+♦ `H` to hit (draw another card)
+♦ `S` to stand (keep the current hand)
 
 The goal is to get as close to 21 as possible without going over.
 
 Important terms:
 
-- **Bust**: Going over 21
-- **Blackjack**: Getting exactly 21 with the first two cards
-- **Push**: A tie between the player and dealer
+♦ **Bust**: Going over 21
+♦ **Blackjack**: Getting exactly 21 with the first two cards
+♦ **Push**: A tie between the player and dealer
 
 After the player finishes their turn, the dealer automatically draws cards until reaching at least 17
 
@@ -74,6 +74,16 @@ After the player finishes their turn, the dealer automatically draws cards until
 | `Deck.deal_card()` | William | N/A |
 | `check_bust()` | Devante | 1. Conditional expressions, 2. Optional parameters and/or keyword arguments |
 | `Deck.reset_deck()` | Efieson | N/A |
+
+## Project Contributions
+
+♦ Kerwin: Worked on the `Hand` class and the logic for calculating hand values.
+
+♦ William: Worked on the `Deck` class and the main game setup/gameplay.
+
+♦ Devante: Worked on the `check_bust.py` file and completed the README/documentation.
+
+♦ Efieson: Worked on the `reset_deck()` function for reshuffling and resetting the deck.
 
 ## Annotated Bibliography
 
