@@ -72,12 +72,13 @@ class Deck:
         dealer_hand (Hand): The dealer's hand from the last game.
     Returns:
         None
-    Author: Efieson Estfianos
+    Author: Efieson Estifanos
     """
+    # Step 1: Get the final scores from both hands
     player_score = player_hand.calculate_value()
     dealer_score = dealer_hand.calculate_value()
     
-    # Conditional expression to figure out the result (technique #1)
+    # Step 2: Check for any busts first, then compare scores in one line to decide the winner
     if player_score > 21:
         last_result = "Player busted!"
     elif dealer_score > 21:
@@ -87,12 +88,15 @@ class Deck:
                       "Dealer wins." if dealer_score > player_score else \
                       "It's a push!"
     
-    # f-string with an expression inside (technique #3)
+    # Step 3: Display the result along with both scores and the point difference between them
     print(f"--- {last_result} (Player: {player_score}, Dealer: {dealer_score}, Diff: {abs(player_score - dealer_score)}) ---")
     print("Reshuffling the deck for a new round...")
-    self.__init__()
-    print(f"Deck is ready! {len(self.cards)} cards shuffled.")
     
+    # Step 4: Reuse the original setup to rebuild the deck
+    self.__init__()
+    
+    # Step 5: Confirm the deck is ready and show the new card count
+    print(f"Deck is ready! {len(self.cards)} cards shuffled.")
         
     
         
