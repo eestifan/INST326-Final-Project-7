@@ -68,8 +68,15 @@ def main():
             print("Dealer wins.")
         else:
             print("It's a push.")
+    replay = input("\nPlay again? (Y/N): ").lower()
 
-    print("\nGame Over. Thanks for playing!")
+    if replay == 'y':
+        player_hand.clear_hand()
+        dealer_hand.clear_hand()
+        deck.reset_deck(player_hand, dealer_hand)
+        main()
+    else:
+        print("\nGame Over. Thanks for playing!")
 
 if __name__ == "__main__":
     main()
