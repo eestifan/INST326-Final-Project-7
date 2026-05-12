@@ -20,6 +20,9 @@ This file contains a function that checks if a hand has gone over 21 by using th
 ### deck.py
 Contains the `Deck` class used to create, shuffle, deal, and reset cards for the Blackjack game.
 
+### place_bet.py
+Contains the `place_bet()` function, which handles betting, chip tracking, and determining chip payouts after each round.
+
 ---
 ## How to Run the Program
 
@@ -81,6 +84,7 @@ Important terms:
 | `Deck.deal_card()` | William | N/A |
 | `check_bust()` | Devante | 1. Conditional expressions, 2. Optional parameters and/or keyword arguments |
 | `Deck.reset_deck()` | Efieson | N/A |
+| `place_bet()` | Efieson | 9. Use of a key function with max() |
 
 ## Project Contributions
 
@@ -90,7 +94,7 @@ Important terms:
 
 ♦ Devante: Worked on the `check_bust.py` file and completed the README/documentation.
 
-♦ Efieson: Worked on the `reset_deck()` function for reshuffling and resetting the deck between rounds.
+♦ Efieson: Worked on the `reset_deck()` and `place_bet()` functions for reshuffling the deck and handling betting/chip logic.
 
 ## Annotated Bibliography
 
