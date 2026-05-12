@@ -109,19 +109,23 @@ class Hand:
     """
         return len(self.cards) == 2 and self.calculate_value() == 21
 
-    def clear_hand(self, announce=False):
+def clear_hand(self, announce=False):
     """
     Purpose: Remove all cards from the hand to reset it for a new round.
+
     Args:
         announce (bool): If True, prints how many cards were cleared. Default is False.
+
     Returns:
         None
+
     Author: Efieson Estifanos
     """
+
     # Print a message showing how many cards are being cleared
     if announce:
         print(f"Clearing {len(self.cards)} cards from the hand.")
-    
-    # Empty the cards list 
+
+    # Empty the cards list
     self.cards.clear()
     
