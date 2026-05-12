@@ -73,6 +73,7 @@ After the player finishes their turn, the dealer automatically draws cards until
 | `Deck.shuffle()` | William | N/A |
 | `Deck.deal_card()` | William | N/A |
 | `check_bust()` | Devante | 1. Conditional expressions, 2. Optional parameters and/or keyword arguments |
+| `Deck.reset_deck()` | Efieson Estfianos | N/A |
 
 ## Annotated Bibliography
 
