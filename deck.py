@@ -65,38 +65,44 @@ class Deck:
         return None
 
     def reset_deck(self, player_hand, dealer_hand):
-    """
-    Purpose: Announce the result of the last game and reset the deck for a new round.
-    Args:
-        player_hand (Hand): The player's hand from the last game.
-        dealer_hand (Hand): The dealer's hand from the last game.
-    Returns:
-        None
-    Author: Efieson Estifanos
-    """
-    # Step 1: Get the final scores from both hands
-    player_score = player_hand.calculate_value()
-    dealer_score = dealer_hand.calculate_value()
-    
-    # Step 2: Check for any busts first, then compare scores in one line to decide the winner
-    if player_score > 21:
-        last_result = "Player busted!"
-    elif dealer_score > 21:
-        last_result = "Dealer busted, player wins!"
-    else:
-        last_result = "Player wins!" if player_score > dealer_score else \
-                      "Dealer wins." if dealer_score > player_score else \
-                      "It's a push!"
-    
-    # Step 3: Display the result along with both scores and the point difference between them
-    print(f"--- {last_result} (Player: {player_score}, Dealer: {dealer_score}, Diff: {abs(player_score - dealer_score)}) ---")
-    print("Reshuffling the deck for a new round...")
-    
-    # Step 4: Reuse the original setup to rebuild the deck
-    self.__init__()
-    
-    # Step 5: Confirm the deck is ready and show the new card count
-    print(f"Deck is ready! {len(self.cards)} cards shuffled.")
+        """
+        Purpose: Announce the result of the last game and reset the deck for a new round.
+
+        Args:
+            player_hand (Hand): The player's hand from the last game.
+            dealer_hand (Hand): The dealer's hand from the last game.
+
+        Returns:
+            None
+
+        Author: Efieson Estifanos
+        """
+
+        # Step 1: Get the final scores from both hands
+        player_score = player_hand.calculate_value()
+        dealer_score = dealer_hand.calculate_value()
+
+        # Step 2: Check for any busts first, then compare scores
+        if player_score > 21:
+            last_result = "Player busted!"
+        elif dealer_score > 21:
+            last_result = "Dealer busted, player wins!"
+        else:
+            last_result = (
+                "Player wins!" if player_score > dealer_score
+                else "Dealer wins." if dealer_score > player_score
+                else "It's a push!"
+            )
+
+        # Step 3: Display the result
+        print(f"--- {last_result} (Player: {player_score}, Dealer: {dealer_score}, Diff: {abs(player_score - dealer_score)}) ---")
+        print("Reshuffling the deck for a new round...")
+
+        # Step 4: Reuse the original setup to rebuild the deck
+        self.__init__()
+
+        # Step 5: Confirm the deck is ready
+        print(f"Deck is ready! {len(self.cards)} cards shuffled.")
         
     
         
