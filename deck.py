@@ -66,37 +66,32 @@ class Deck:
 
     def reset_deck(self, player_hand, dealer_hand):
     """
-    Purpose: Show results of the previous game and reset the deck for a new round.
+    Purpose: Announce the result of the last game and reset the deck for a new round.
     Args:
         player_hand (Hand): The player's hand from the last game.
         dealer_hand (Hand): The dealer's hand from the last game.
     Returns:
         None
-    Author: Efieson Estifanos
+    Author: Efieson Estfianos
     """
-   # Figure out the result by checking both hands
     player_score = player_hand.calculate_value()
     dealer_score = dealer_hand.calculate_value()
-
-    if player_score> 21:
-        last_result= " Player busted"
+    
+    # Conditional expression to figure out the result (technique #1)
+    if player_score > 21:
+        last_result = "Player busted!"
     elif dealer_score > 21:
         last_result = "Dealer busted, player wins!"
-    elif player_score > dealer_score:
-        last_result = "Player wins!"
-    elif dealer_score > player_score:
-        last_result = "Dealer wins."
     else:
-        last_result = "It's a push!"
-     # Step 2: Announce the result
-    print(f"--- {last_result} ---")
+        last_result = "Player wins!" if player_score > dealer_score else \
+                      "Dealer wins." if dealer_score > player_score else \
+                      "It's a push!"
+    
+    # f-string with an expression inside (technique #3)
+    print(f"--- {last_result} (Player: {player_score}, Dealer: {dealer_score}, Diff: {abs(player_score - dealer_score)}) ---")
     print("Reshuffling the deck for a new round...")
-    
-    # Step 3: Reuse the original setup from __init__ to rebuild the deck
     self.__init__()
-    
-    print("Deck is ready! 52 cards shuffled.")
-        
+    print(f"Deck is ready! {len(self.cards)} cards shuffled.")
     
         
     
