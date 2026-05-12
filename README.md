@@ -12,13 +12,13 @@ This project is a simple Blackjack game written in Python. The goal is to get a 
 This file contains the `Hand` class. It handles storing the cards, adding new cards, calculating the total value of a hand, checking if the hand is bust, and displaying the cards.
 
 ### main.py  
-Runs the Blackjack game and controls the main gameplay loop using the `Hand` and `Deck` classes.
+Runs the Blackjack game and controls the main gameplay loop using the `Hand` and `Deck` classes. It also lets the player choose whether to play another round after a game ends.
 
 ### check_bust.py  
 This file contains a function that checks if a hand has gone over 21 by using the calculate_value method from the `Hand` class.
 
 ### deck.py
-Contains the `Deck` class used to create, shuffle, and deal cards for the Blackjack game.
+Contains the `Deck` class used to create, shuffle, deal, and reset cards for the Blackjack game.
 
 ---
 ## How to Run the Program
@@ -51,6 +51,10 @@ The player can then choose:
 
 The goal is to get as close to 21 as possible without going over.
 
+After the player finishes their turn, the dealer automatically draws cards until reaching at least 17. The program then displays the result of the round.
+
+After the round ends, the program may ask if the player wants to play again. Enter `Y` to start another round or `N` to stop playing.
+
 Important terms:
 
 ♦ **Bust**: Going over 21
@@ -59,7 +63,7 @@ Important terms:
 
 ♦ **Push**: A tie between the player and dealer
 
-After the player finishes their turn, the dealer automatically draws cards until reaching at least 17
+♦ **Play Again**: Choose whether to start another round after the current game ends.
 
 ## Attribution Table
 
@@ -86,7 +90,7 @@ After the player finishes their turn, the dealer automatically draws cards until
 
 ♦ Devante: Worked on the `check_bust.py` file and completed the README/documentation.
 
-♦ Efieson: Worked on the `reset_deck()` function for reshuffling and resetting the deck.
+♦ Efieson: Worked on the `reset_deck()` function for reshuffling and resetting the deck between rounds.
 
 ## Annotated Bibliography
 
