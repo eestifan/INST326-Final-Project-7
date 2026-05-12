@@ -46,6 +46,7 @@ When the game starts, the player and dealer are each dealt two cards.
 The player can then choose:
 
 ♦ `H` to hit (draw another card)
+
 ♦ `S` to stand (keep the current hand)
 
 The goal is to get as close to 21 as possible without going over.
@@ -53,7 +54,9 @@ The goal is to get as close to 21 as possible without going over.
 Important terms:
 
 ♦ **Bust**: Going over 21
+
 ♦ **Blackjack**: Getting exactly 21 with the first two cards
+
 ♦ **Push**: A tie between the player and dealer
 
 After the player finishes their turn, the dealer automatically draws cards until reaching at least 17
