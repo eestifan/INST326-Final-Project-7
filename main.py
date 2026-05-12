@@ -1,5 +1,6 @@
 from hand import Hand
 from deck import Deck
+from place_bet import place_bet
 
 def main():
     """
@@ -17,6 +18,9 @@ def main():
     deck = Deck()
     player_hand = Hand()
     dealer_hand = Hand()
+
+    player_chips = 100
+    bet = place_bet(player_chips)
 
     # Dealt from the deck instead of hard-coded
     player_hand.add_card(deck.deal_card())
@@ -68,6 +72,7 @@ def main():
             print("Dealer wins.")
         else:
             print("It's a push.")
+    player_chips = place_bet(player_chips, player_hand, dealer_hand, bet)
     replay = input("\nPlay again? (Y/N): ").lower()
 
     if replay == 'y':
