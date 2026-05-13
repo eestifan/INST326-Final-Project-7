@@ -87,7 +87,7 @@ Important terms:
 
 ♦ William: Worked on the `Deck` class and the main game setup/gameplay.
 
-♦ Devante: Worked on the `check_bust.py` file and completed the README/documentation.
+♦ Devante: Worked on the `check_bust.py` file, integrated betting/replay features into `main.py`, and completed the README/documentation.
 
 ♦ Efieson: Worked on the `reset_deck()` and `place_bet()` functions for reshuffling the deck and handling betting/chip logic.
 
