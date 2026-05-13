@@ -21,7 +21,7 @@ This file contains a function that checks if a hand has gone over 21 by using th
 Contains the `Deck` class used to create, shuffle, deal, and reset cards for the Blackjack game.
 
 ### place_bet.py
-Contains the `place_bet()` function, which handles betting, chip tracking, and determining chip payouts after each round.
+Contains the `place_bet()` function, which handles all betting, chip tracking, and determining chip payouts after each round.
 
 ---
 ## How to Run the Program
@@ -55,6 +55,8 @@ The player can then choose:
 The goal is to get as close to 21 as possible without going over.
 
 After the player finishes their turn, the dealer automatically draws cards until reaching at least 17. The program then displays the result of the round.
+
+Before each round, the player starts with 100 chips and places a bet. At the end of the round, chips are added or removed depending on whether the player wins or loses.
 
 After the round ends, the program may ask if the player wants to play again. Enter `Y` to start another round or `N` to stop playing.
 
