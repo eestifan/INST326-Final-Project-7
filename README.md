@@ -31,15 +31,8 @@ Open a terminal or command prompt and navigate to the project folder.
 Run the program using:
 
 ```bash
-python main.py
-```
-
-If needed, use:
-
-```bash
 python3 main.py
 ```
-
 ---
 
 ## How to Use the Program
